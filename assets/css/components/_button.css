@@ -1,0 +1,34 @@
+.button {
+  @apply w-fit px-12 py-7 flex items-center;
+  box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+  border-radius: 18px;
+  &__text {
+    @apply font-semibold text-lg mr-2.5;
+  }
+  &__icon {
+    @apply transition-all duration-500;
+  }
+  &__dark {
+    @apply bg-primary-two text-white stroke-primary-one transition-all duration-300;
+
+    &:hover {
+      @apply bg-primary-one text-white stroke-primary-two;
+    }
+  }
+  &:hover &__icon {
+    @apply translate-x-2;
+  }
+}
+
+.rm-button {
+  @apply w-fit mx-auto flex items-center;
+  &__text {
+    @apply font-semibold text-lg text-dark-gray mr-3;
+  }
+  &__icon {
+    @apply transition-all duration-500;
+  }
+  &:hover &__icon {
+    @apply translate-x-2;
+  }
+}

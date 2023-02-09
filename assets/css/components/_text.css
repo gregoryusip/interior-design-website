@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
+  color: #292f36;
+}
+
+h1 {
+  @apply text-4xl lg:text-[50px];
+}
+h2 {
+  @apply text-3xl lg:text-[35px];
+}
+h3 {
+  @apply text-2xl lg:text-[25px];
+}
+h4 {
+  @apply text-xl lg:text-[22px];
+}
+h5 {
+  @apply text-lg lg:text-[20px];
+}
+h6 {
+  @apply text-base lg:text-[18px];
+}
+
+p {
+  font-family: 'Jost', sans-serif;
+  /* color: #292f36; */
+}
+
+.text {
+  &--title {
+    @apply font-bold text-primary-two;
+  }
+  &--subtitle {
+    @apply font-normal text-dark-gray;
+  }
+}

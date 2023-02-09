@@ -1,0 +1,98 @@
+.card {
+  &-wtpt {
+    /* @apply w-full lg:w-1/3  px-2; */
+    @apply flex flex-col bg-white rounded-3xl;
+    &__wrapper {
+      @apply w-full px-8 py-10;
+
+      &--information {
+        @apply w-full flex items-center gap-x-4;
+
+        &__photo {
+          @apply w-20 h-20 rounded-full overflow-hidden;
+        }
+
+        &__text {
+          &--name {
+            @apply font-bold text-xl;
+          }
+          &--region {
+            @apply font-normal text-base;
+          }
+        }
+      }
+
+      &--comment {
+        @apply font-normal text-lg mt-6 flex-1;
+      }
+    }
+  }
+
+  &-projects {
+    @apply w-full flex flex-col overflow-hidden;
+
+    img {
+      @apply w-full object-cover;
+    }
+
+    &__content {
+      @apply w-full flex justify-between items-center pt-4 lg:pt-6;
+
+      &--left {
+        &__title {
+          @apply mb-1;
+        }
+      }
+      &--right {
+        @apply w-[70px] h-[70px] flex justify-center items-center rounded-full transition duration-300 bg-primary-three cursor-pointer;
+
+        img {
+          @apply w-8 h-8;
+        }
+
+        &:hover {
+          @apply bg-primary-one;
+        }
+      }
+    }
+  }
+
+  &-articles {
+    @apply w-full flex flex-col p-5 border-[1px] border-primary-one rounded-3xl lg:rounded-[62px] transition-all duration-300 group-hover:bg-primary-three;
+
+    &__img {
+      @apply w-full relative rounded-t-3xl lg:rounded-t-[62px] overflow-hidden;
+
+      img {
+        @apply w-full object-cover;
+      }
+
+      &--tag {
+        @apply font-normal text-base px-3 py-2 absolute bottom-5 left-5 bg-white;
+        border-radius: 8px 8px 8px 0px;
+      }
+    }
+
+    &__title {
+      @apply w-full flex-grow pt-5 pb-6;
+    }
+
+    &__content {
+      @apply w-full flex justify-between items-center pb-4;
+
+      &--date {
+      }
+      &--button {
+        @apply w-[52px] h-[52px] flex justify-center items-center rounded-full transition duration-300 bg-primary-three cursor-pointer transition-all duration-300 group-hover:bg-white;
+
+        img {
+          @apply w-8 h-8;
+        }
+
+        &:hover {
+          @apply bg-primary-one;
+        }
+      }
+    }
+  }
+}
