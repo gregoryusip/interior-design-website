@@ -101,7 +101,7 @@
     </div>
 
     <!-- CLIENTS -->
-    <div class="site-container pb-36">
+    <div class="site-container pb-20 lg:pb-36">
       <div class="home--client">
         <div class="home--client__wrap">
           <img src="@/assets/img/client/client-1.png" alt="Client 1" />
@@ -139,34 +139,35 @@
             :key="`project-${i}`"
             class="home--projects__container--wrapper"
           >
-            <div class="card-projects">
-              <img
-                src="@/assets/img/static/home/home-project-1.jpg"
-                alt="Projects 1"
-              />
-              <div class="card-projects__content">
-                <div class="card-projects__content--left">
-                  <h3 class="card-projects__content--left__title">
-                    {{ item.title }}
-                  </h3>
-                  <p class="card-projects__content--left__subtitle">
-                    {{ item.desc }}
-                  </p>
-                </div>
-                <div class="card-projects__content--right">
-                  <img
-                    src="@/assets/img/icon/chevron-right.svg"
-                    alt="Icon Chevron"
-                  />
-                </div>
-              </div>
+            <CardProjects :item="item" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="pb-20 lg:pb-36">
+      <div class="home--experience">
+        <div class="site-container">
+          <div class="home--experience__container">
+            <div
+              v-for="(item, i) in points"
+              :key="`point-${i}`"
+              class="home--experience__container--wrapper"
+            >
+              <h1 class="home--experience__container--wrapper__title text--85">
+                {{ item.count }}
+              </h1>
+              <p class="home--experience__container--wrapper__subtitle">
+                {{ item.label }}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ATYILE & NEWS -->
+    <!-- ARTICLE & NEWS -->
     <div class="site-container pb-20 lg:pb-36">
       <div class="home--articles">
         <div class="home--articles__title">
@@ -185,33 +186,20 @@
             :key="`project-${i}`"
             class="home--articles__container--wrapper group"
           >
-            <div class="card-articles">
-              <div class="card-articles__img">
-                <img
-                  src="@/assets/img/static/home/home-article-1.jpg"
-                  alt="Projects 1"
-                />
-                <div class="card-articles__img--tag">
-                  <p>{{ item.tag }}</p>
-                </div>
-              </div>
-              <h3 class="card-articles__title">
-                {{ item.title }}
-              </h3>
-              <div class="card-articles__content">
-                <p class="card-articles__content--date">
-                  {{ item.date }}
-                </p>
-                <div class="card-articles__content--button">
-                  <img
-                    src="@/assets/img/icon/chevron-right.svg"
-                    alt="Icon Chevron"
-                  />
-                </div>
-              </div>
-            </div>
+            <CardArticles :item="item" />
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- JOIN US -->
+    <div class="site-container pb-20 lg:pb-36">
+      <div class="home--join">
+        <h1 class="home--join__title">Wanna join the interno</h1>
+        <p class="home--join__subtitle">
+          It is a long established fact will be distracted.
+        </p>
+        <UiButtonArrow class="button__brown" :text="'Contact With Us'" />
       </div>
     </div>
   </div>
@@ -282,6 +270,24 @@ export default {
         {
           title: 'Modern Playground',
           desc: 'Decor / Artchitecture',
+        },
+      ],
+      points: [
+        {
+          count: 12,
+          label: 'Year Of Experience',
+        },
+        {
+          count: 85,
+          label: 'Success Project',
+        },
+        {
+          count: 15,
+          label: 'Active Project',
+        },
+        {
+          count: 95,
+          label: 'Happy Customers',
         },
       ],
       articles: [
