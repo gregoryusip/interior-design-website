@@ -33,6 +33,9 @@ p {
 }
 
 .text {
+  &--85 {
+    @apply text-[50px] lg:text-85;
+  }
   &--title {
     @apply font-bold text-primary-two;
   }
