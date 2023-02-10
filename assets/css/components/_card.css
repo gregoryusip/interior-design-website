@@ -1,7 +1,7 @@
 .card {
   &-wtpt {
     /* @apply w-full lg:w-1/3  px-2; */
-    @apply flex flex-col bg-white rounded-3xl;
+    @apply w-full flex flex-col bg-white rounded-3xl;
     &__wrapper {
       @apply w-full px-8 py-10;
 
@@ -58,7 +58,7 @@
   }
 
   &-articles {
-    @apply w-full flex flex-col p-5 border-[1px] border-primary-one rounded-3xl lg:rounded-[62px] transition-all duration-300 group-hover:bg-primary-three;
+    @apply w-full flex flex-col p-5 border-[1px] border-primary-one rounded-3xl lg:rounded-[62px] cursor-pointer transition-all duration-300 group-hover:bg-primary-three;
 
     &__img {
       @apply w-full relative rounded-t-3xl lg:rounded-t-[62px] overflow-hidden;
