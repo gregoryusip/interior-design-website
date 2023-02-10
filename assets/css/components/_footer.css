@@ -1,0 +1,54 @@
+.footer {
+  &--title {
+    @apply mb-4;
+  }
+  &--menu {
+    @apply flex flex-col gap-y-4;
+
+    &__item {
+      @apply font-normal text-base lg:text-lg text-[#4D5053] transition duration-300;
+
+      &:hover {
+        @apply text-primary-two;
+      }
+    }
+  }
+
+  &--above {
+    @apply w-full mb-20 lg:mb-36;
+
+    &__wrapper {
+      @apply w-full flex flex-wrap gap-y-8  xl:justify-between;
+    }
+  }
+
+  &--bottom {
+    @apply w-full border-t-[1px] border-primary-one py-4;
+
+    &__text {
+      @apply text-center;
+    }
+  }
+
+  &--container-1 {
+    @apply w-full xl:w-fit;
+
+    &__img {
+      @apply mb-4;
+    }
+    &__subtitle {
+      @apply mb-8;
+    }
+    &__socmed {
+      @apply w-full flex gap-x-14;
+    }
+  }
+
+  &--container-2,
+  &--container-3 {
+    @apply w-1/2 md:w-1/3 xl:w-fit;
+  }
+  &--container-4 {
+    @apply w-full md:w-1/3 xl:w-fit;
+  }
+}
