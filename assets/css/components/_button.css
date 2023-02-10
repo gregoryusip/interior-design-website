@@ -15,6 +15,13 @@
       @apply bg-primary-one text-white stroke-primary-two;
     }
   }
+  &__brown {
+    @apply bg-primary-one border-[1px] border-primary-one text-white stroke-primary-two transition-all duration-300;
+
+    &:hover {
+      @apply bg-primary-two  text-white stroke-primary-one;
+    }
+  }
   &:hover &__icon {
     @apply translate-x-2;
   }
