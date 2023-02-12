@@ -44,6 +44,10 @@ export default {
           link: '/about',
         },
         {
+          menu: 'Team',
+          link: '/teams',
+        },
+        {
           menu: 'Services',
           link: '/services',
         },
