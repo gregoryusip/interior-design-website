@@ -2,7 +2,9 @@
   <div class="navbar">
     <div class="site-container flex flex-wrap items-center">
       <div class="w-1/2 lg:w-1/3">
-        <img src="@/assets/img/logo/logo.png" alt="Logo" class="h-[50px]" />
+        <nuxt-link to="/">
+          <img src="@/assets/img/logo/logo.png" alt="Logo" class="h-[50px]" />
+        </nuxt-link>
       </div>
       <div class="w-2/3 hidden lg:block">
         <div class="w-full flex justify-end gap-x-7">
@@ -38,8 +40,8 @@ export default {
           link: '/',
         },
         {
-          menu: 'Pages',
-          link: '/pages',
+          menu: 'About Us',
+          link: '/about',
         },
         {
           menu: 'Services',
@@ -52,6 +54,10 @@ export default {
         {
           menu: 'Blog',
           link: '/blogs',
+        },
+        {
+          menu: 'Pricing',
+          link: '/pricing',
         },
         {
           menu: 'Contact',
