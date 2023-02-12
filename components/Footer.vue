@@ -33,20 +33,23 @@
         <div class="footer--container-2">
           <h5 class="footer--title">Pages</h5>
           <div class="footer--menu">
-            <nuxt-link to="/">
+            <nuxt-link to="/about">
               <p class="footer--menu__item">About Us</p>
             </nuxt-link>
-            <nuxt-link to="/">
+            <nuxt-link to="/projects">
               <p class="footer--menu__item">Our Projects</p>
             </nuxt-link>
-            <nuxt-link to="/">
+            <nuxt-link to="/teams">
               <p class="footer--menu__item">Our Team</p>
             </nuxt-link>
-            <nuxt-link to="/">
+            <nuxt-link to="/contact">
               <p class="footer--menu__item">Contact Us</p>
             </nuxt-link>
-            <nuxt-link to="/">
+            <nuxt-link to="/services">
               <p class="footer--menu__item">Services</p>
+            </nuxt-link>
+            <nuxt-link to="/faq">
+              <p class="footer--menu__item">FAQ</p>
             </nuxt-link>
           </div>
         </div>
