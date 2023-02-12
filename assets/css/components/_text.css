@@ -9,22 +9,23 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl lg:text-[50px];
+  @apply text-4xl lg:text-50;
+  /* line-height: 60px; */
 }
 h2 {
-  @apply text-3xl lg:text-[35px];
+  @apply text-3xl lg:text-35;
 }
 h3 {
-  @apply text-2xl lg:text-[25px];
+  @apply text-2xl lg:text-25;
 }
 h4 {
-  @apply text-xl lg:text-[22px];
+  @apply text-xl lg:text-22;
 }
 h5 {
-  @apply text-lg lg:text-[20px];
+  @apply text-lg lg:text-xl;
 }
 h6 {
-  @apply text-base lg:text-[18px];
+  @apply text-base lg:text-lg;
 }
 
 p {
@@ -34,7 +35,7 @@ p {
 
 .text {
   &--85 {
-    @apply text-[50px] lg:text-85;
+    @apply text-50 lg:text-85;
   }
   &--title {
     @apply font-bold text-primary-two;

@@ -1,0 +1,19 @@
+.pagination {
+  @apply w-full;
+
+  &--container {
+    @apply w-full flex flex-row justify-center gap-x-4;
+
+    &__wrapper {
+      @apply w-[52px] h-[52px] rounded-full border-[1px] border-primary-one flex justify-center items-center cursor-pointer transition-all duration-300;
+
+      &:hover {
+        @apply bg-primary-three border-primary-three;
+      }
+
+      &--number {
+        @apply font-medium text-base text-primary-two;
+      }
+    }
+  }
+}

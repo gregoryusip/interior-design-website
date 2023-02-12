@@ -95,4 +95,27 @@
       }
     }
   }
+
+  &-latest-articles {
+    @apply w-full pt-8 pb-2 border-b-[1px] border-primary-three cursor-pointer transition-all duration-300;
+
+    &:hover {
+      @apply border-primary-one;
+    }
+
+    &--title {
+      @apply w-2/3 mb-1;
+    }
+    &--date {
+      @apply text-right;
+    }
+  }
+
+  &-sticky-categories {
+    @apply w-full py-4 border-b-[1px] border-primary-one cursor-pointer transition-all duration-500;
+
+    &:hover {
+      @apply bg-primary-one pl-4;
+    }
+  }
 }

@@ -1,0 +1,14 @@
+.page-header {
+  @apply w-full relative;
+
+  &--img {
+    @apply w-full h-[356px] object-cover;
+  }
+  &--wrapper {
+    @apply w-[90%] md:w-[500px] text-center absolute bottom-0 left-1/2 -translate-x-1/2 py-5 md:py-10 rounded-t-3xl md:rounded-t-[37px] bg-white;
+
+    &__subtitle {
+      @apply text-lg lg:text-xl mt-2;
+    }
+  }
+}
