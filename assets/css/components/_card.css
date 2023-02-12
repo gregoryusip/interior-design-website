@@ -104,7 +104,7 @@
     }
 
     &--title {
-      @apply w-2/3 mb-1;
+      @apply w-full lg:w-2/3 mb-1;
     }
     &--date {
       @apply text-right;
