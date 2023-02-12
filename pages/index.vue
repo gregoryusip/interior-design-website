@@ -21,7 +21,7 @@
     </div>
 
     <!-- PROJECT PLAN, INTERIOR WORK, REALIZATION -->
-    <div class="site-container pt-20 pb-12 lg:py-52">
+    <div class="site-container pt-20 pb-12 lg:py-36">
       <div class="home--pwr">
         <div
           class="home--pwr__container"
@@ -147,24 +147,7 @@
 
     <!-- EXPERIENCE -->
     <div class="pb-20 lg:pb-36">
-      <div class="home--experience">
-        <div class="site-container">
-          <div class="home--experience__container">
-            <div
-              v-for="(item, i) in points"
-              :key="`point-${i}`"
-              class="home--experience__container--wrapper"
-            >
-              <h1 class="home--experience__container--wrapper__title text--85">
-                {{ item.count }}
-              </h1>
-              <p class="home--experience__container--wrapper__subtitle">
-                {{ item.label }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <SectionExperience :points="points" />
     </div>
 
     <!-- ARTICLE & NEWS -->
@@ -193,15 +176,7 @@
     </div>
 
     <!-- JOIN US -->
-    <div class="site-container pb-20 lg:pb-36">
-      <div class="home--join">
-        <h1 class="home--join__title">Wanna join the interno</h1>
-        <p class="home--join__subtitle">
-          It is a long established fact will be distracted.
-        </p>
-        <UiButtonArrow class="button__brown" :text="'Contact With Us'" />
-      </div>
-    </div>
+    <SectionJoinUs />
   </div>
 </template>
 
@@ -292,16 +267,22 @@ export default {
       ],
       articles: [
         {
+          id: '1',
+          img: 'article-1.jpg',
           title: 'Let’s Get Solution For Building Construction Work',
           date: '26 December, 2022',
           tag: 'Kitchen Design',
         },
         {
+          id: '2',
+          img: 'article-2.jpg',
           title: 'Low Cost Latest Invented Interior Designing Super Ideas',
           date: '22 December, 2022',
           tag: 'Living Design',
         },
         {
+          id: '3',
+          img: 'article-3.jpg',
           title: 'Best For Any Office & Business Interior Solution',
           date: '25 December, 2022',
           tag: 'Interior Design',
